@@ -149,3 +149,18 @@ const actors = [{
 console.log(bars);
 console.log(events);
 console.log(actors);
+
+for(var i = 0 ; i < events.length ; i++)
+{
+  for(var j = 0 ; j < bars.length ; j++)
+  {
+    if(events[i].barId == bars[j].id)
+    {
+      var price_c = bars[j].pricePerPerson * events[i].persons + bars[j].pricePerHour * events[i].time;
+      console.log(price_c);
+      events[i].price = price_c;
+    }
+  }
+}
+console.log(bars);
+console.log(events);
