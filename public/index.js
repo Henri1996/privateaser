@@ -164,3 +164,4 @@ for(var i = 0 ; i < events.length ; i++)
 }
 console.log(bars);
 console.log(events);
+//test
